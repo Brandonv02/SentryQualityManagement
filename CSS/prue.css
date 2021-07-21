@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/lib/fonts/Roboto/Roboto-Medium.ttf"),
+}
+html {
+  background: linear-gradient(to right, #abbaab, #ffffff);
+   
+}
+.navbar{
+  background: #BE0811 !important;
+  font-family: Roboto;
+}
+
+.dropdown{
+  border-radius:0;
+  border:0;
+}
+.dropdown-menu{
+  background: #BE0811;
+  border:0;
+  top:80%;
+  border-radius:0px 0px 5px 5px;
+}
+.dropdown-item:hover{
+  background:#abbaab;
+  color:#fff;
+}
+.dropdown-menu a{
+  color:#fff;
+} 
+.navbar .nav-item .nav-link{
+  color:#eee !important; 
+  
+}
+.navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link{
+  color:red !important;
+  
+}
+.carousel-caption{
+  color: #000000;
+  font-family: Roboto;
+  background-color: #abbaab;
+  opacity: 0.9;
+}
+.carousel-control-prev{
+  background-color: #abbaab;
+}
+.carousel-control-next{
+  background-color: #abbaab;
+}
+
+.carousel-inner{
+  margin-top: 0px;
+}
+.imgLogo{
+  width: 80px;
+  margin-right: 15px;
+}
+
+
+.subt-C{
+  text-align: center;
+  font-family: Roboto;
+  background-color: #abbaab;
+  height: 45px;
+  margin-bottom: 0px;
+}
+.btn.btn-danger{
+  background-color: #BE0811;
+}
+.footerP{
+  background-color: #BE0811;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.footerP-img{
+  width: 85px;
+  margin: 13px 70px;
+  height: 85px;
+}
+.carousel{
+  position: inherit;
+}
+.footerP-text{
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  margin: 39px 55px;
+  border-bottom: 2px solid blanchedalmond;
+}
