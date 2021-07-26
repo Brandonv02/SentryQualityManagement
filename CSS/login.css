@@ -37,7 +37,7 @@ body {
   background-color: transparent
 }
 .icon{
-  width: 100px;
+  width: 85px;
   margin-top: -4px;
 }
    
@@ -108,8 +108,8 @@ h2 {
 }
   
   #formFooter {
-    background-color: #D3D3D3;
-    border-top: 1px solid #f70707;
+    background-color: white;
+    /* border-top: 1px solid #f70707; */
     padding: 25px;
     text-align: center;
     -webkit-border-radius: 0 0 10px 10px;

@@ -9,8 +9,9 @@
 <body>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link rel="stylesheet" href="/CSS/prue.css">
-  <link rel="stylesheet" href="lib/frameworks/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="lib/frameworks/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/CSS/cards.css">
+  <link rel="stylesheet" href="/lib/frameworks/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="/lib/frameworks/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
@@ -27,7 +28,7 @@
         <a class="nav-link" href="principal2.html">Inicio<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Consultar<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Historico<span class="sr-only">(current)</span></a>
       </li>
  
       
@@ -51,18 +52,9 @@
         
       </div>
     </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-       Roles
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Crear</a>
-        <a class="dropdown-item" href="#">Editar</a>
-      </div>
-    </li>
      <li class="nav-item dropdown dmenu">
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Aliados
+        Areas
       </a>
       <div class="dropdown-menu sm-menu">
         <a class="dropdown-item" href="views/crear-aliado.html">Crear</a>
@@ -72,7 +64,7 @@
     </li>
     <li class="nav-item dropdown dmenu">
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Sedes
+        Indicadores
       </a>
       <div class="dropdown-menu sm-menu">
         <a class="dropdown-item" href="views/crear-sede.html">Crear</a>
@@ -94,55 +86,111 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <style>
-  /* Make the image fully responsive */
-  .carousel-inner img {
-    width: 80%;
-    height: 100%;
-    margin-left: 130px;
-  }
-  </style>
+  
 </head>
-<div class="home-content">
-  <!-- <i class='bx bx-menu' ></i> -->
-  <span class="text">Principal</span>
-  <img class="icon" src="../img/PNG/logo-blanco.png" style="width: 74px; margin-left: 702px;  ">
-</div>
-<div class="caja">
-<div class="card" >
-  <img class="card-img-top" src="../img/SVG/roles.svg" alt="Card image cap" style="padding: 15px;">
-  <div class="card-body">
-    <h5 class="card-title">ROLES</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="roles.html" class="btn btn-danger">Ir al sitio</a>
+<section class="details-card">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card-content">
+                  <div class="card-img">
+                      <img src="https://placeimg.com/380/230/nature" alt="">
+                      <span><h4>heading</h4></span>
+                  </div>
+                  <div class="card-desc">
+                      <h3>Heading</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                          voluptas totam</p>
+                          <a href="#" class="btn-card">Read</a>   
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-content">
+                <div class="card-img">
+                    <img src="https://placeimg.com/380/230/nature" alt="">
+                    <span><h4>heading</h4></span>
+                </div>
+                <div class="card-desc">
+                    <h3>Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                        voluptas totam</p>
+                        <a href="#" class="btn-card">Read</a>   
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-content">
+              <div class="card-img">
+                  <img src="https://placeimg.com/380/230/nature" alt="">
+                  <span><h4>heading</h4></span>
+              </div>
+              <div class="card-desc">
+                  <h3>Heading</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                      voluptas totam</p>
+                      <a href="#" class="btn-card">Read</a>   
+              </div>
+          </div>
+      </div>
+      
+          <div class="col-md-4">
+            <div class="card-content">
+                <div class="card-img">
+                    <img src="https://placeimg.com/380/230/nature" alt="">
+                    <span><h4>heading</h4></span>
+                </div>
+                <div class="card-desc">
+                    <h3>Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                        voluptas totam</p>
+                        <a href="#" class="btn-card">Read</a>   
+                </div>
+            </div>
+        </div>
+          <div class="col-md-4">
+              <div class="card-content">
+                  <div class="card-img">
+                      <img src="https://placeimg.com/380/230/animals" alt="">
+                      <span><h4>heading2</h4></span>
+                  </div>
+                  <div class="card-desc">
+                      <h3>Heading2</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                          voluptas totam</p>
+                          <a href="#" class="btn-card">Read</a>   
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card-content">
+                  <div class="card-img">
+                      <img src="https://placeimg.com/380/230/tech" alt="">
+                      <span><h4>heading3</h4></span>
+                  </div>
+                  <div class="card-desc">
+                      <h3>Heading3</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                          voluptas totam</p>
+                          <a href="#" class="btn-card">Read</a>   
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
-</div>
+</section>
 
-<div class="card" >
-  <img class="card-img-top" src="../img/SVG/indicadores.svg" alt="Card image cap" style="padding: 15px;">
-  <div class="card-body">
-    <h5 class="card-title">INDICADORES</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-danger">Ir al sitio</a>
-  </div>
-</div>
 
-<div class="card" >
-  <img class="card-img-top" src="../img/SVG/areas.svg" alt="Card image cap" style="padding: 15px;">
-  <div class="card-body">
-    <h5 class="card-title">AREAS</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-danger">Ir al sitio</a>
-  </div>
-</div>
+<footer class="footerP">
+  <img class="footerP-img" src="/img/PNG/LogooSentry.png" alt="">
+  <h2 class="footerP-text">Created By: Brandon Vides</h2>
+  
+</footer>
 
-<div class="card" >
-  <img class="card-img-top " src="../img/SVG/reportes.svg" alt="Card image cap" style="padding: 15px;">
-  <div class="card-body">
-    <h5 class="card-title">REPORTES</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-danger">Ir al sitio</a>
-  </div>
-</div>
-  </script>
+  
+
+</body>
+  <script src="lib/frameworks/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+  <script src="lib/frameworks/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+ 
 </html>
