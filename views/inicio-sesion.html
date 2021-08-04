@@ -10,7 +10,7 @@
 </head>
 <body >
    <header>
-       <img class="icon" src="/img/PNG/LogooSentry.png" style="margin: 10px;">
+       <img class="icon" src="/img/SVG/Imagotipo Sentry 2021_Águila Blanca.svg" style="margin: 10px;">
        <h2 class="header-sesion"></h2>
    </header>
     <div class="wrapper fadeInDown">
@@ -21,14 +21,15 @@
           <!-- Icon -->
           <div class="fadeIn first">
             <img src="/img/SVG/inicio-sesion.svg" id="icon" alt="User Icon"/>
-            <h3 class="subt">INICIA SESIÓN</h3>
+            <h3 class="subt">Inicia sesión</h3>
           </div>
       
           <!-- Login Form -->
-          <form>
-            <input type="text" id="login" class="fadeIn second" name="login" placeholder="Email">
-            <input type="password" id="password" class="fadeIn third" name="login" placeholder="Contraseña">
-            <input type="submit" class="btn fadeIn fourth" value="Ingresar">
+          <form id="container">
+            <input type="text" class="fadeIn second"  name="usuario" placeholder="Ingresa email">
+            <input type="password" class="fadeIn third"  name="pass" placeholder="Ingresa contraseña">
+            <!-- <input type="submit" class="btn fadeIn fourth" value="Ingresar"> -->
+            <button class="btn btn-danger" type="submit">Ingresar</button>
           </form>
       
           <!-- Remind Passowrd -->
@@ -38,12 +39,40 @@
       
         </div>
       </div>
+      <div class="preview">
+        <p id="usuario"></p>
+        <p id="pass" ></p>
+      </div>
 
 
 
+    <script>
+      const $container = document.querySelector('#container')
 
 
-    <script src="lib/frameworks/bootstrap/js/bootstrap.min.js"></script>
-    
+      const $usuario = document.querySelector('#usuario')
+      function renderUsuario(formData) {
+          const usuario = formData.get('usuario')
+          $usuario.textContent = usuario
+      }
+      const $pass = document.querySelector('#pass')
+      function renderPass(formData) {
+          const pass = formData.get('pass')
+          $pass.textContent = pass
+      }
+
+      $container.addEventListener('submit', (Event) => {
+          Event.preventDefault()
+          const formData = new FormData(Event.currentTarget)
+          renderUsuario(formData)
+          renderPass(formData)
+          fetch(`http://localhost/SentryQualityManagemenet`, {
+            method: 'POST',
+            body: formData,
+          })
+      })
+    </script>
+    <script src="/lib/frameworks/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
     </body>
 </html>

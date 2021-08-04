@@ -2,10 +2,9 @@
   font-family: "Roboto";
   src: url("/lib/fonts/Roboto/Roboto-Medium.ttf"),
 }
-html {
-  background: linear-gradient(to right, #abbaab, #ffffff);
-   
-}
+/* html {
+   background: linear-gradient(to right, #abbaab, #ffffff); 
+} */
 body, body .container{
   display: contents;
 }
@@ -13,25 +12,27 @@ body, body .container{
   background: #BE0811 !important;
   font-family: Roboto;
 }
-
+.btn.btn-outline-default{
+  border-radius: 10px;
+}
 .dropdown{
   border-radius:0;
   border:0;
   
 }
 .dropdown-menu{
-  background: #BE0811;
+  background: white;
   border:0;
   top:80%;
   border-radius:0px 0px 5px 5px;
   
 }
 .dropdown-item:hover{
-  background:#C54729;
+  background:#9B9B9B;
   color:#fff;
 }
 .dropdown-menu a{
-  color:#fff;
+  color:#BE0811;
   
 } 
 .navbar .nav-item .nav-link{
@@ -41,10 +42,19 @@ body, body .container{
 .navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link{
   color:red !important;
   
+  
+}
+
+.navbar .nav-item .nav-link:hover{
+  /* background-color: #fff; */
+  border: #A61117 solid;
+  border-radius: 10px;
+  
+  background-color: transparent;
 }
 
 .imgLogo{
-  width: 80px;
+  /* width: 80px; */
   margin-right: 15px;
 }
 
@@ -60,7 +70,7 @@ body, body .container{
   background-color: #BE0811;
 }
 .footerP{
-  background-color: #BE0811;
+  background-color: #CDCDCD;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -73,9 +83,9 @@ body, body .container{
 }
 
 .footerP-text{
-  color: #fff;
+  color: #666666;
   font-family: Roboto;
   font-size: 20px;
   margin: 39px 55px;
-  border-bottom: 2px solid blanchedalmond;
+ 
 }
