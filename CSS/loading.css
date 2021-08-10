@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("/lib/fonts/Roboto/Roboto-Medium.ttf"),
+  }
+  body{
+      font-family: Roboto;
+  }
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container-img{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+.texto{
+    text-align: center;
+    font-family: Roboto;
+}
+.ball_bleu{
+    margin-top: auto;
+    background-color:#BE0811;border-radius:30px;
+    display:inline-block;
+    -webkit-animation:animb 1s infinite ease;
+    -moz-animation:animb 1s infinite ease;
+    -ms-animation:animb 1s infinite ease;-o-animation:animb 1s infinite ease;
+    animation:animb 1s infinite ease
+    
+} 
+
+.ball_vert{
+    margin-top: auto;
+    background-color:#666666;
+    border-radius:30px;
+    display:inline-block;
+    margin-left:10px;
+    -webkit-animation:animv 1s infinite ease;
+    -moz-animation:animv 1s infinite ease;
+    -ms-animation:animv 1s infinite ease;
+    -o-animation:animv 1s infinite ease;
+    animation:animv 1s infinite ease
+    } 
+.ball_rouge{
+    margin-top: auto;
+    background-color:#BE0811;
+    border-radius:30px;
+    display:inline-block;
+    margin-left:10px;
+    -webkit-animation:animr 1s infinite ease;-moz-animation:animr 1s infinite ease;
+    -ms-animation:animr 1s infinite ease;
+    -o-animation:animr 1s infinite ease;
+    animation:animr 1s infinite ease
+    }
+     @-webkit-keyframes animb{
+         0%{height:30px;width:30px} 25%{height:5px;width:5px} 100%{height:30px;width:30px}
+         } @-webkit-keyframes animv{
+             0%{height:5px;width:5px} 25%{height:30px;width:30px} 100%{height:5px;width:5px}
+             } 
+             @-webkit-keyframes animr{
+                 0%{height:30px;width:30px} 25%{height:5px;width:5px} 100%{height:30px;width:30px}
+                 }
+             @-moz-keyframes animb{
+                 0%{height:30px;width:30px} 25%{height:5px;width:5px} 100%{height:30px;width:30px}
+                 }
+             @-moz-keyframes animv{
+                 0%{height:5px;width:5px} 25%{height:30px;width:30px} 100%{height:5px;width:5px}
+                 } 
+             @-moz-keyframes animr{
+                 0%{height:30px;width:30px} 25%{height:5px;width:5px} 100%{height:30px;width:30px}
+                               }
+             @-ms-keyframes animb{
+                 0%{height:30px;width:30px} 25%{height:5px;width:5px} 100%{height:30px;width:30px}
+                 }
+             @-ms-keyframes animv{
+                 0%{height:5px;width:5px} 25%{height:30px;width:30px} 100%{height:5px;width:5px}
+                 } 
+             @-ms-keyframes animr{
+                 0%{height:30px;width:30px} 25%{height:5px;width:5px} 100%{height:30px;width:30px}
+                 } 
+             @keyframes animb{
+                 0%{height:30px;width:30px} 25%{height:5px;width:5px} 100%{height:30px;width:30px}
+                 }
+             @keyframes animv{
+                 0%{height:5px;width:5px} 25%{height:30px;width:30px} 100%{height:5px;width:5px}
+                 } 
+             @keyframes animr{0%{height:30px;width:30px} 25%{height:5px;width:5px} 100%{height:30px;width:30px}}

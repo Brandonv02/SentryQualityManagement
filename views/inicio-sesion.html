@@ -25,9 +25,9 @@
           </div>
       
           <!-- Login Form -->
-          <form id="container">
-            <input type="text" class="fadeIn second"  name="usuario" placeholder="Ingresa email">
-            <input type="password" class="fadeIn third"  name="pass" placeholder="Ingresa contraseña">
+          <form id="container" action="https://localhost:44317/swagger/index.html" method="POST">
+            <input type="text" class="fadeIn second" required="true" name="User" placeholder="Ingresa email">
+            <input type="password" class="fadeIn third" required="true" name="Password" placeholder="Ingresa contraseña">
             <!-- <input type="submit" class="btn fadeIn fourth" value="Ingresar"> -->
             <button class="btn btn-danger" type="submit">Ingresar</button>
           </form>
@@ -47,30 +47,50 @@
 
 
     <script>
+      // const $container = document.querySelector('#container')
+
+
+      // const $usuario = document.querySelector('#usuario')
+      // function renderUsuario(formData) {
+      //     const usuario = formData.get('usuario')
+      //     $usuario.textContent = usuario
+      // }
+      // const $pass = document.querySelector('#pass')
+      // function renderPass(formData) {
+      //     const pass = formData.get('pass')
+      //     $pass.textContent = pass
+      // }
+
+      // $container.addEventListener('submit', (Event) => {
+      //     Event.preventDefault()
+      //     const formData = new FormData(Event.currentTarget)
+      //     renderUsuario(formData)
+      //     renderPass(formData)
+      //     fetch(`http://localhost/SentryQualityManagemenet`, {
+      //       method: 'POST',
+      //       body: formData,
+      //     })
+      // })
+
       const $container = document.querySelector('#container')
 
+      $container.addEventListener('submit', handlesubmit)
 
-      const $usuario = document.querySelector('#usuario')
-      function renderUsuario(formData) {
-          const usuario = formData.get('usuario')
-          $usuario.textContent = usuario
+     async function handlesubmit(event){
+        event.preventDefault()
+        const form = new FormData(this)
+        const response = await fetch(this.action, {
+          method: this.method,
+          body: form,
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        if (response.ok){
+          this.reset()
+          alert('Gracias por registrarte, Bienvenido :')
+        }
       }
-      const $pass = document.querySelector('#pass')
-      function renderPass(formData) {
-          const pass = formData.get('pass')
-          $pass.textContent = pass
-      }
-
-      $container.addEventListener('submit', (Event) => {
-          Event.preventDefault()
-          const formData = new FormData(Event.currentTarget)
-          renderUsuario(formData)
-          renderPass(formData)
-          fetch(`http://localhost/SentryQualityManagemenet`, {
-            method: 'POST',
-            body: formData,
-          })
-      })
     </script>
     <script src="/lib/frameworks/bootstrap/js/bootstrap.min.js"></script>
     <script src="/js/app.js"></script>

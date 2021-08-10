@@ -4,14 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CRUD user</title>
+  <title>Areas</title>
 </head>
 <body>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link rel="stylesheet" href="/CSS/prue.css">
   <link rel="stylesheet" href="/CSS/cards.css">
-  <!-- <link rel="stylesheet" href="/lib/frameworks/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="/lib/frameworks/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"> -->
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
@@ -39,48 +37,26 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Historico<span class="sr-only">(current)</span></a>
-      </li>
- 
-      
+    </li>
       <li class="nav-item dropdown dmenu">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        <a class="nav-link " href="Usuario.html" id="navbardrop" data-toggle="dropdown">
           Usuarios
         </a>
-        <div class="dropdown-menu sm-menu">
-          <a class="dropdown-item" href="views/create-user.html">Crear</a>
-          <a class="dropdown-item" href="#">Editar</a>
-          
-        </div>
-      </li>
+    </li>
       <li class="nav-item dropdown dmenu">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+      <a class="nav-link " href="roles.html" id="navbardrop" data-toggle="dropdown">
         Roles
       </a>
-      <div class="dropdown-menu sm-menu">
-        <a class="dropdown-item" href="views/crear-rol.html">Crear</a>
-        <a class="dropdown-item" href="#">Editar</a>
-        
-      </div>
     </li>
      <li class="nav-item dropdown dmenu">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+      <a class="nav-link " href="areas.html" id="navbardrop" data-toggle="dropdown">
         Areas
       </a>
-      <div class="dropdown-menu sm-menu">
-        <a class="dropdown-item" href="views/crear-aliado.html">Crear</a>
-        <a class="dropdown-item" href="#">Editar</a>
-        
-      </div>
     </li>
     <li class="nav-item dropdown dmenu">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+      <a class="nav-link " href="#" id="navbardrop" data-toggle="dropdown">
         Indicadores
       </a>
-      <div class="dropdown-menu sm-menu">
-        <a class="dropdown-item" href="views/crear-sede.html">Crear</a>
-        <a class="dropdown-item" href="#">Editar</a>
-        
-      </div>
     </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -96,7 +72,7 @@
 			<div class="table-title">
 				<div class="row">
 					<div class="col-sm-6">
-						<h2>Crear <b>Usuario</b></h2>
+						<h2> <b>Areas</b></h2>
 					</div>
 					<div class="col-sm-6">
 						<a href="#addEmployeeModal" class="btn btn-success"  data-toggle="modal" style="background-color: #4B4B4B;"><i class="material-icons">&#xE147;</i> <span>Agregar</span></a>
@@ -113,78 +89,14 @@
 								<label for="selectAll"></label>
 							</span>
 						</th>
-						<th>Nombre</th>
-						<th>Email</th>
-						<!-- <th>Address</th>
-						<th>Phone</th> -->
+						<th>Id</th>
+						<th>Area</th>
+						<th>Responsable</th>
+						<!-- <th>Estado</th> -->
 						<th>Actions</th>
 					</tr>
 				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox1" name="options[]" value="1">
-								<label for="checkbox1"></label>
-							</span>
-						</td>
-						<td>Thomas Hardy</td>
-						<td>thomashardy@mail.com</td>
-						<!-- <td>89 Chiaroscuro Rd, Portland, USA</td>
-						<td>(171) 555-2222</td> -->
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox2" name="options[]" value="1">
-								<label for="checkbox2"></label>
-							</span>
-						</td>
-						<td>Dominique Perrier</td>
-						<td>dominiqueperrier@mail.com</td>
-						<!-- <td>Obere Str. 57, Berlin, Germany</td>
-						<td>(313) 555-5735</td> -->
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox3" name="options[]" value="1">
-								<label for="checkbox3"></label>
-							</span>
-						</td>
-						<td>Maria Anders</td>
-						<td>mariaanders@mail.com</td>
-						<!-- <td>25, rue Lauriston, Paris, France</td>
-						<td>(503) 555-9931</td> -->
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox4" name="options[]" value="1">
-								<label for="checkbox4"></label>
-							</span>
-						</td>
-						<td>Fran Wilson</td>
-						<td>franwilson@mail.com</td>
-						<!-- <td>C/ Araquil, 67, Madrid, Spain</td>
-						<td>(204) 619-5731</td> -->
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr>					
+				<tbody>	
 					<tr>
 						<td>
 							<span class="custom-checkbox">
@@ -192,29 +104,20 @@
 								<label for="checkbox5"></label>
 							</span>
 						</td>
-						<td>Martin Blank</td>
-						<td>martinblank@mail.com</td>
-						<!-- <td>Via Monte Bianco 34, Turin, Italy</td>
-						<td>(480) 631-2097</td> -->
+						<td>1</td>
+						<td>Gestion humana</td>
+						<td>Brandon vides diaz</td>
+						<!-- <td>Activo</td> -->
+						<!--<td>(480) 631-2097</td> -->
 						<td>
 							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
 						</td>
 					</tr> 
+                    
 				</tbody>
 			</table>
-			<!-- <div class="clearfix">
-				<div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
-				<ul class="pagination">
-					<li class="page-item disabled"><a href="#">Previous</a></li>
-					<li class="page-item"><a href="#" class="page-link">1</a></li>
-					<li class="page-item"><a href="#" class="page-link">2</a></li>
-					<li class="page-item active"><a href="#" class="page-link">3</a></li>
-					<li class="page-item"><a href="#" class="page-link">4</a></li>
-					<li class="page-item"><a href="#" class="page-link">5</a></li>
-					<li class="page-item"><a href="#" class="page-link">Next</a></li>
-				</ul>
-			</div> -->
+			
 		</div>
 	</div>        
 </div>
@@ -233,14 +136,14 @@
 						<input type="text" class="form-control" required>
 					</div>
 					<div class="form-group">
-						<label>Email</label>
+						<label>Descripcion</label>
 						<input type="email" class="form-control" required>
 					</div>
-					<!-- <div class="form-group">
-						<label>Address</label>
+					 <div class="form-group">
+						<label>Estado</label>
 						<textarea class="form-control" required></textarea>
 					</div>
-					<div class="form-group">
+					<!--<div class="form-group">
 						<label>Phone</label>
 						<input type="text" class="form-control" required>
 					</div>					 -->
@@ -268,8 +171,8 @@
 						<input type="text" class="form-control" required>
 					</div>
 					<div class="form-group">
-						<label>Email</label>
-						<input type="email" class="form-control" required>
+						<label>Descripcion</label>
+						<textarea class="form-control" required></textarea>
 					</div>
 				   <!-- <div class="form-group">
 						<label>Address</label>
@@ -325,9 +228,6 @@
 
 </body>
   <script src="lib/frameworks/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
-  <!-- <script src="lib/frameworks/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
-  <script src="/lib/frameworks/jquery/jquery-3.3.1.min.js"></script>	 	
-  <script src="/lib/frameworks/popper/popper.min.js"></script> -->
   <script src="/js/crud.js"></script>
   <script src="/lib/frameworks/bootstrap/js/bootstrap.min.js"></script>
    <!--  Plugin DynamicTable -->
