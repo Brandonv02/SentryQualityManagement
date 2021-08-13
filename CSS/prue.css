@@ -6,7 +6,7 @@
    background: linear-gradient(to right, #abbaab, #ffffff); 
 } */
 body, body .container{
-  display: contents;
+  /* display: contents; */
   font-size: 14px;
 }
 .navbar{
@@ -76,6 +76,9 @@ body, body .container{
 .btn.btn-danger{
   background-color: #BE0811;
 }
+.footer{
+  display: flex;
+}
 .footerP{
   background-color: #CDCDCD;
   height: 120px;
@@ -95,4 +98,14 @@ body, body .container{
   font-size: 20px;
   margin: 39px 55px;
  
+}
+.center{
+  height: 80%;
+  height: 441px;
+}
+.center-inf{
+  text-align: center;
+  font-family: Roboto;
+  color: black;
+  background-color: #9B9B9B;
 }
